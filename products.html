@@ -47,10 +47,11 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
         }
 
         nav li {
-            display: inline;
             margin-right: 20px;
         }
 
@@ -85,7 +86,7 @@
         }
 
         .product img {
-          position: absolute;
+            position: absolute;
             width: 150px; /* Set the image width as needed */
             right: 100px; /* Add margin to separate image from text */
             border-radius: 5px; /* Optional: Add border-radius to the image */
@@ -94,6 +95,18 @@
         footer {
             text-align: center;
             margin-top: 40px;
+        }
+
+        /* Responsive Design */
+        @media only screen and (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+          nav a {
+            display: block;
+            padding: 10px 0;
+          }
         }
     </style>
     <title>Products - Suraj Bhan Jagdish Rai</title>
