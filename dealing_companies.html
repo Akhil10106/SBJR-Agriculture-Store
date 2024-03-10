@@ -77,7 +77,8 @@
 
     .companies {
       display: flex;
-      justify-content: space-around;
+      flex-direction: column; /* Stack companies vertically */
+      align-items: center; /* Center-align companies */
     }
 
     .company {
@@ -87,7 +88,7 @@
       margin: 20px;
       background-color: #fff;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      width: calc(25% - 40px); /* Adjusted width to display 4 companies in one line */
+      width: 80%; /* Adjusted width for responsiveness */
       box-sizing: border-box;
       text-align: center; /* Center-align company names */
     }
